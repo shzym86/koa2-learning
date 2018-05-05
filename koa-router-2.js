@@ -1,12 +1,10 @@
 const Koa = require('koa')
 const fs = require('fs')
 const app = new Koa()
-
 const Router = require('koa-router')
 
-let home = new Router()
-
 // 子路由1
+let home = new Router()
 home.get('/', async (ctx) => {
   let html = `
     <ul>
@@ -25,7 +23,7 @@ page.get('/404', async (ctx) => {
   ctx.body = 'helloworld page!'
 })
 
-// 装载所有子路由
+// 装载所有子路由，包括二级路由
 let router = new Router()
 router.use('/', home.routes(), home.allowedMethods())
 router.use('/page', page.routes(), page.allowedMethods())

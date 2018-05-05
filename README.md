@@ -2,11 +2,13 @@
 
 #### 示例代码用于实现Koa2最基础的一些功能：
  
+ - Koa请求与响应
  - Koa路由
  - Koa静态服务器
  - Koa中间件的使用
  - Koa模板渲染
  - Koa实现POST请求
+ - Koa实现上传图片
  - Koa实现cookie和session
  - Koa操作mysql数据库
  - Koa实现jsonp跨域请求
@@ -28,6 +30,7 @@
   "dependencies": {
     "ejs": "^2.5.8",
     "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-convert": "^1.2.0",
     "koa-jsonp": "^2.0.2",
@@ -35,7 +38,8 @@
     "koa-session": "^5.8.1",
     "koa-static": "^4.0.2",
     "koa-views": "^6.1.4",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "path-to-regexp": "^2.2.1"
  },
   "devDependencies": {
     "nodemon": "^1.17.3"
