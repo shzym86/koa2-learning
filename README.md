@@ -12,41 +12,7 @@
  - Koa实现cookie和session
  - Koa操作mysql数据库
  - Koa实现jsonp跨域请求
- 
-> package.json：
-
-```
-{
-  "name": "koa-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.5.8",
-    "koa": "^2.5.0",
-    "koa-body": "^2.5.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-convert": "^1.2.0",
-    "koa-jsonp": "^2.0.2",
-    "koa-router": "^7.4.0",
-    "koa-session": "^5.8.1",
-    "koa-static": "^4.0.2",
-    "koa-views": "^6.1.4",
-    "mysql": "^2.15.0",
-    "path-to-regexp": "^2.2.1"
- },
-  "devDependencies": {
-    "nodemon": "^1.17.3"
-  }
-}
-
-``` 
+ - Koa利用redis存储session
  
 参考资料：
 
